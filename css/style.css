@@ -87,9 +87,26 @@ body {
     align-items: center;
 }
 
-.square.clicked {
+.square-safe,
+.square-bomb {
+    color: white;
+}
+
+.square-safe {
     background-color: #6495ed;
 }
+.square-bomb {
+    background-color: red;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+
+
+
+
 
 footer {
     height: 60px;
