@@ -1,0 +1,103 @@
+/* GENERAL */
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #7fffd4;
+    font-family: sans-serif;
+}
+
+.main-cont {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* TOOLBAR */
+.toolbar {
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.logo h1 {
+    padding: 20px;
+}
+
+.selection {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.selection select {
+    padding: 0px 30px;
+    margin: 10px;
+}
+
+.selection button {
+    padding: 0 10px;
+}
+
+
+/* GRID */
+
+.grid-conteiner {
+    text-align: center;
+    margin: 30px;
+
+    flex-grow: 1;
+  
+}
+
+
+.grid {
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    height: calc(100% / 10);
+    width: calc(100% / 10);
+    border: 1px solid black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square.clicked {
+    background-color: #6495ed;
+}
+
+footer {
+    height: 60px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 20px
+}
+
+
